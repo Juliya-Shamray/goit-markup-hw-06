@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -476,18 +476,73 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-wrapper">
+          <p class="subscribe-text description">Subscribe</p>
+          <form class="subscribe-form">
+            <label for="subscribe">
+              <input
+                class="subscribe-input"
+                name="subscribe"
+                type="email"
+                placeholder="E-mail"
+                id="subscribe"
+              />
+            </label>
+            <button class="button subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-aircraft"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- End Footer -->
     <!-- Start modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="button-close button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-label"
+            ><span class="input-text">Name</span>
+            <input class="modal-input" type="text" name="user-name" />
+          </label>
+          <label class="modal-label"
+            ><span class="input-text">Phone</span>
+            <input class="modal-input" type="tel" name="user-phone" />
+          </label>
+          <label class="modal-label"
+            ><span class="input-text">Email</span>
+            <input class="modal-input" type="email" name="user-email" />
+          </label>
+          <label class="modal-label"
+            ><span class="input-text">Comment</span>
+            <textarea
+              class="modal-comment"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input
+            class="accept-policy"
+            type="checkbox"
+            name="privacy-policy"
+            id="policy"
+          />
+          <span class="input-text"
+            >I accept the terms and conditions of the</span
+          >
+          <a href="">Privacy Policy</a>
+          <label for="policy"></label>
+          <button class="button modal-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <!-- End  modal -->
