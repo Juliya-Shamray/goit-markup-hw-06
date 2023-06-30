@@ -501,7 +501,7 @@
 
     <!-- End Footer -->
     <!-- Start modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="button-close button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
@@ -545,17 +545,23 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <input
-            class="accept-policy"
-            type="checkbox"
-            name="privacy-policy"
-            id="policy"
-          />
-          <span class="checkbox-text input-text">
-            I accept the terms and conditions of the
-            <a class="privacy-policy" href="">Privacy Policy</a>
-          </span>
-          <label for="policy"></label>
+          <label class="form-policy-check">
+            <input
+              class="accept-policy visually-hidden"
+              type="checkbox"
+              name="privacy-policy"
+            />
+            <span class="form-policy-icon">
+              <svg class="icon-check" width="16" height="16">
+                <use href="./images/icons.svg#icon-click"></use>
+              </svg>
+            </span>
+            <span class="checkbox-text input-text">
+              I accept the terms and conditions of the
+              <a class="privacy-policy" href="">Privacy Policy</a>
+            </span>
+          </label>
+
           <button class="button modal-button" type="submit">Send</button>
         </form>
       </div>

@@ -803,13 +803,39 @@ body {
     transform: translateY(-50%);
 }
 
-.checkbox-text {
+.form-policy-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--modal-bg);
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.form-policy-check {
+    display: flex;
+    align-items: center;
     margin-bottom: 24px;
+}
+
+.icon-check {
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accept-policy:checked+.form-policy-icon .icon-check {
+    opacity: 1
+}
+
+.accept-policy:focus+.form-policy-icon {
+    border-color: var(--iris);
 }
 
 .privacy-policy {
     color: var(--iris)
 }
+
+
 
 .modal-button {
     width: 169px;
