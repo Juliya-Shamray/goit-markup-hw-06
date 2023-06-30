@@ -723,12 +723,7 @@ body {
 }
 
 
-.modal-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.modal-label {
+.modal-form-part {
     margin-bottom: 8px;
 }
 
