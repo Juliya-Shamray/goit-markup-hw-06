@@ -734,6 +734,7 @@ body {
 }
 
 
+
 .modal-form-part {
     margin-bottom: 8px;
 }
@@ -815,8 +816,6 @@ body {
 }
 
 .form-policy-check {
-    display: flex;
-    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
