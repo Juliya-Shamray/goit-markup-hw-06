@@ -771,9 +771,6 @@ body {
     fill: var(--iris)
 }
 
-.input-img {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 .modal-comment {
@@ -813,6 +810,17 @@ body {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.form-policy-check {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--light-slate)
 }
 
 .form-policy-icon {
@@ -827,29 +835,17 @@ body {
     border-radius: 2px;
     border: 1px solid var(--modal-bg);
     cursor: pointer;
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.form-policy-check {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--light-slate)
+.accept-policy:checked+.form-policy-check .form-policy-icon {
+    background-color: var(--ocean);
+    border: none;
+    fill: var(--cloud)
 }
 
-.icon-check {
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.accept-policy:checked+.form-policy-icon .icon-check {
-    opacity: 1
-}
-
-.accept-policy:focus+.form-policy-icon {
+.accept-policy:checked+.form-policy-check .form-policy-icon {
     border-color: var(--iris);
 }
 
